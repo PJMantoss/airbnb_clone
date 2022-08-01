@@ -47,4 +47,5 @@ nav > img {
 
 .cardInfo{
   display: flex;
+  align-items: center;
 }

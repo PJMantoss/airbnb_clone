@@ -13,11 +13,11 @@ const Card = () => {
                 alt='pic' 
             />
             <span className='rating'>5.0</span>
-            <span className='desc'>(6) .</span>
-            <span className='price'>UK</span>
+            <span className='gray'>(6) .</span>
+            <span className='gray'>UK</span>
         </div>
         <p>Life lessons with Katie Zaferes</p>
-        <p>From $136 / person</p>
+        <p><span className='bold'>From $136</span> / person</p>
     </div>
   )
 }
