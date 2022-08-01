@@ -2,7 +2,9 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div className='hero'>
+        <img src='./photo-grid.png' alt='hero' />
+    </div>
   )
 }
 

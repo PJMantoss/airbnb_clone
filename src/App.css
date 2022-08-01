@@ -9,3 +9,14 @@ nav > img {
   max-width: 100px;
   margin-left: 3%;
 }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero > img {
+  width: 80%;
+  padding: 30px 0;
+}
