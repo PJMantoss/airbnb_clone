@@ -35,6 +35,16 @@ nav > img {
   font-weight: 300;
 }
 
+.card{
+  width: 175px;
+  font-size: 12px;
+}
+
+.card> img {
+  width: 100%;
+  border-radius: 9px;
+}
+
 .cardInfo{
   display: flex;
 }
