@@ -34,3 +34,7 @@ nav > img {
   font-size: 16px;
   font-weight: 300;
 }
+
+.cardInfo{
+  display: flex;
+}
