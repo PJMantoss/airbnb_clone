@@ -19,23 +19,16 @@ nav > img {
 }
 
 .hero > img {
-  width: 80%;
-  padding: 30px 0;
+  padding: 20px;
 }
 
-.heroInfo {
-  padding-left: 40px;
-  margin: 30px 0;
-}
 
-.heroInfo > h1 {
-  font-family: 'Poppins', sans-serif;
+.hero > h1 {
   font-size: 36px;
   font-weight: 600;
 }
 
-.heroInfo > p {
-  font-family: 'Poppins', sans-serif;
+.hero > p {
   font-size: 16px;
   font-weight: 300;
   width: 26%;
