@@ -40,6 +40,14 @@ nav > img {
   font-size: 12px;
 }
 
+.gray {
+  color: #918e9b;
+}
+
+.bold{
+  font-weight: bold;
+}
+
 .card> img {
   width: 100%;
   border-radius: 9px;
@@ -48,4 +56,8 @@ nav > img {
 .cardInfo{
   display: flex;
   align-items: center;
+}
+
+.cardInfo > img {
+  width: 16px;
 }
