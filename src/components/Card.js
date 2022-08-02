@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Card = ({img, rating, reviewCount, location, title, price}) => {
+const Card = ({img, rating, reviewCount, location, title, price, openSpots}) => {
   return (
     <div className='card'>
-        <div className='cardBadge'>SOLD OUT</div>
+        {openSpots === 0 && <div className='cardBadge'>SOLD OUT</div>}
         <img 
             src={img} 
             alt='pic' 
