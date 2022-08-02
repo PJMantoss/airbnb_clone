@@ -75,5 +75,13 @@ nav > img {
 }
 
 .cardInfo > img {
-  width: 16px;
+  width: 14px;
+}
+
+.cardTitle{
+  text-overflow: ellipsis;
+}
+
+.cardPrice{
+  margin-top: auto;
 }

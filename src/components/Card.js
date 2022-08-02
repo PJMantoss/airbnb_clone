@@ -16,8 +16,8 @@ const Card = ({img, rating, reviewCount, location, title, price}) => {
             <span className='gray'>({reviewCount}) .</span>
             <span className='gray'>{location}</span>
         </div>
-        <p>{title}</p>
-        <p><span className='bold'>From ${price}</span> / person</p>
+        <p className='cardTitle'>{title}</p>
+        <p className='cardPrice'><span className='bold'>From ${price}</span> / person</p>
     </div>
   )
 }
