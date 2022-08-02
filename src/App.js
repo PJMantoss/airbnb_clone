@@ -9,17 +9,19 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      {Data.map(data => (
-        <Card 
-          key={data.id}
-          img={data.coverImg}
-          rating={data.stats.rating} 
-          reviewCount={data.stats.reviewCount}
-          location={data.location}
-          title={data.title}
-          price={data.price}
-        />
-      ))}
+      <section className='cardList'>
+        {Data.map(data => (
+          <Card 
+            key={data.id}
+            img={data.coverImg}
+            rating={data.stats.rating} 
+            reviewCount={data.stats.reviewCount}
+            location={data.location}
+            title={data.title}
+            price={data.price}
+          />
+        ))}
+      </section>
     </div>
   );
 }

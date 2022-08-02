@@ -19,7 +19,7 @@ nav > img {
 }
 
 .hero > img {
-  max-width: 400px;
+  max-width: 650px;
   align-self: center;
 }
 
@@ -48,7 +48,12 @@ nav > img {
   font-weight: bold;
 }
 
-.card> img {
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card > img {
   width: 100%;
   border-radius: 9px;
 }
