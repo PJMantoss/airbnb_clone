@@ -51,6 +51,7 @@ nav > img {
 .cardList {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card > img {
