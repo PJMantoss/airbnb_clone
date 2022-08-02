@@ -3,6 +3,7 @@ import React from 'react';
 const Card = ({img, rating, reviewCount, location, title, price}) => {
   return (
     <div className='card'>
+      <div className='cardBadge'>SOLD</div>
         <img 
             src={img} 
             alt='pic' 

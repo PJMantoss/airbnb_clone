@@ -85,3 +85,13 @@ nav > img {
 .cardPrice{
   margin-top: auto;
 }
+
+.cardBadge{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  padding: 5px 7px;
+  background: color;
+  font-weight: bold;
+  border-radius: 2px;
+}
