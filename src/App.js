@@ -9,7 +9,11 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <Card />
+      <Card 
+        img 
+        rating 
+        reviewCount 
+      />
     </div>
   );
 }
