@@ -1,21 +1,23 @@
 import React from 'react';
 
-const Card = ({img, rating, reviewCount, location, title, price, openSpots}) => {
+const Card = ({data}) => {
   let badgeText;
-  if(openSpots === 0){
+  if(data.openSpots === 0){
     badgeText = 'SOLD OUT'
-  }else if(location === 'Online'){
+  }else if(data.location === 'Online'){
     badgeText = 'ONLINE'
   }
+
+
   return (
     <div className='card'>
-        {
+        {badgeText &&
           <div className='cardBadge'>
-            {location !== null && badgeText}
+            {badgeText}
           </div>
         }
         <img 
-            src={img} 
+            src={data.coverImg} 
             alt='pic' 
         />
         <div className='cardInfo'>
@@ -23,12 +25,12 @@ const Card = ({img, rating, reviewCount, location, title, price, openSpots}) => 
                 src='./star.png' 
                 alt='pic' 
             />
-            <span className='rating'>{rating}</span>
-            <span className='gray'>({reviewCount}) .</span>
-            <span className='gray'>{location}</span>
+            <span className='rating'>{data.stats.rating}</span>
+            <span className='gray'>({data.statsreviewCount}) .</span>
+            <span className='gray'>{data.location}</span>
         </div>
-        <p className='cardTitle'>{title}</p>
-        <p className='cardPrice'><span className='bold'>From ${price}</span> / person</p>
+        <p className='cardTitle'>{data.title}</p>
+        <p className='cardPrice'><span className='bold'>From ${data.price}</span> / person</p>
     </div>
   )
 }
