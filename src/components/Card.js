@@ -26,7 +26,7 @@ const Card = ({data}) => {
                 alt='pic' 
             />
             <span className='rating'>{data.stats.rating}</span>
-            <span className='gray'>({data.statsreviewCount}) .</span>
+            <span className='gray'>({data.stats.reviewCount}) .</span>
             <span className='gray'>{data.location}</span>
         </div>
         <p className='cardTitle'>{data.title}</p>
