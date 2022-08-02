@@ -9,11 +9,16 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <Card 
-        img 
-        rating 
-        reviewCount 
-      />
+      {Data.map((data, id) => (
+        <Card 
+          img 
+          rating 
+          reviewCount 
+          location
+          title
+          price
+        />
+      ))}
     </div>
   );
 }
