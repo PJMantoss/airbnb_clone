@@ -1,9 +1,19 @@
 import React from 'react';
 
 const Card = ({img, rating, reviewCount, location, title, price, openSpots}) => {
+  let badgeText;
+  if(openSpots === 0){
+    badgeText = 'SOLD OUT'
+  }else if(location === 'Online'){
+    badgeText = 'ONLINE'
+  }
   return (
     <div className='card'>
-        {openSpots === 0 && <div className='cardBadge'>SOLD OUT</div>}
+        {
+          <div className='cardBadge'>
+            {location !== null && badgeText}
+          </div>
+        }
         <img 
             src={img} 
             alt='pic' 
