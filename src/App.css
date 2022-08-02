@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,200&display=swap');
 /* font-family: 'Poppins', sans-serif; */
+
+/* Navbar */
 nav{
   height: 70px;
   display: flex;
@@ -12,6 +14,7 @@ nav > img {
   margin-left: 3%;
 }
 
+/* Hero */
 .hero {
   display: flex;
   flex-direction: column;
@@ -35,6 +38,7 @@ nav > img {
   width: 50%;
 }
 
+/* Card */
 .gray {
   color: #918e9b;
 }
@@ -89,6 +93,10 @@ nav > img {
   font-weight: bold;
   border-radius: 2px;
 }
+
+/* Footer */
+
+/* Mobile Responsiveness */
 
 @media only screen and (max-width: 600px){
   .hero {
